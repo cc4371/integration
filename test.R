@@ -1,0 +1,6 @@
+Grades=c(18.2, 20.1, 17.6, 16.8, 18.8, 19.7, 19.1,17.4, 18.7, 19.1, 16.4, 15.9, 18.4,17.7,15.2, 18.8, 17.7, 16.5, 15.9, 17.1, 16.7)
+class=c(rep("Class1",7),rep("Class2",7),rep("Class3",7))
+school=data.frame(Grades,class)
+plot(Grades~class,data=school)
+result= aov(Grades~class,data=school)
+summary(result)
